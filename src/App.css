@@ -1,0 +1,46 @@
+/* src/index.css */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+.app {
+    display: inline-block;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    font-size: 32px;
+    font-weight: bold;
+    background: #eee;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.square:hover {
+    background: #ddd;
+}
+
+.status {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}

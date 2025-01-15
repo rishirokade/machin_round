@@ -1,0 +1,118 @@
+/* Main game container */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Top container for status and reset button */
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 240px;
+}
+
+/* Grid size selection */
+.grid-size-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.grid-size-container select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* Game board grid */
+.board-container {
+    display: grid;
+    gap: 5px;
+}
+
+.cell {
+    border: 2px solid #333;
+    height: 60px;
+    width: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cell:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+.cell-filled {
+    cursor: not-allowed;
+    background-color: #f0f0f0;
+    color: #555;
+}
+
+button {
+    padding: 8px 14px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* 
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    display: grid;
+    width: calc(3 * 50px);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cell {
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell:hover {
+    background-color: rgb(210, 206, 200);
+}
+
+.status {
+    margin-left: 10px;
+} */
